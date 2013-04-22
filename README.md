@@ -1,3 +1,5 @@
+Copyrighted by and licensed to AkzoNobel
+
 tpg
 ===
 
