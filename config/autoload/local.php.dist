@@ -12,8 +12,5 @@
  */
 
 return array(
-		'db' => array (
-				'username' => 'threesonsadmin',
-				'password' => 'marco1234',
-		) 
+
 );
