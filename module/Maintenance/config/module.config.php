@@ -2,21 +2,21 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Beheer\Controller\Beheer' => 'Beheer\Controller\BeheerController',
+            'Maintenance\Controller\Maintenance' => 'Maintenance\Controller\MaintenanceController',
         ),
     ),
     'router' => array(
         'routes' => array(
-            'beheer' => array(
+            'maintenance' => array(
                 'type'    => 'Literal',
                 'options' => array(
                     // Change this to something specific to your module
-                    'route'    => '/beheer',
+                    'route'    => '/maintenance',
                     'defaults' => array(
                         // Change this value to reflect the namespace in which
                         // the controllers for your module are found
-                        '__NAMESPACE__' => 'Beheer\Controller',
-                        'controller'    => 'Beheer',
+                        '__NAMESPACE__' => 'Maintenance\Controller',
+                        'controller'    => 'Maintenance',
                         'action'        => 'index',
                     ),
                 ),
@@ -44,7 +44,7 @@ return array(
     ),
     'view_manager' => array(
         'template_path_stack' => array(
-            'Beheer' => __DIR__ . '/../view',
+            'Maintenance' => __DIR__ . '/../view',
         ),
     ),
 );
