@@ -5,6 +5,9 @@
  */
 chdir(dirname(__DIR__));
 
+//set the default timezone
+date_default_timezone_set("Europe/Amsterdam");
+
 // Setup autoloading
 require 'init_autoloader.php';
 

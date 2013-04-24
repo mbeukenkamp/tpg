@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -6,22 +7,23 @@
  * @copyright Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
-
 namespace Game\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Helper\ViewModel;
 
-class GameController extends AbstractActionController
-{
-    public function indexAction()
-    {
-        return array();
-    }
-
-    public function fooAction()
-    {
-        // This shows the :controller and :action parameters in default route
-        // are working when you browse to /game/game/foo
-        return array();
-    }
+class GameController extends AbstractActionController {
+	protected $_RoundTable;
+	public function indexAction() {
+		return new ViewModel ( array (
+				'round' => $this->getRoundTable ()->fetchAll () 
+		) );
+	}
+	public function getRoundTable() {
+		if (! $this->_RoundTable) {
+			$sm = $this->getServiceLocator ();
+			$this->_RoundTable = $sm->get ( 'Game\Model\RoundTable' );
+		}
+		return $this->_RoundTable;
+	}
 }

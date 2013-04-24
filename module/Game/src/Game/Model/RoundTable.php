@@ -17,22 +17,28 @@ class RoundTable extends AbstractTableGateway
 		{
 			$resultSet = $this->select(function  ($select)
 			{
-				$select->order('?????url ASC');
+				$select->order('id ASC');
 			});
 			$entities = array();
 			foreach ($resultSet as $row) {
 				$entity = new Entity\Round();
-				$entity->setAuto_id($row->auto_id)
-				->setUrl($row->url)
-				->setStatus($row->status)
-				->setReden($row->reden);
+				$entity->setAuto_id($row->id)
+				->setId_game($row->id_game)
+				->setId_role($row->id_role)
+				->setId_round($row->id_round)
+				->setId_product($row->id_product)
+				->setRecieving_delay($row->recieving_delay)
+				->setShipping_delay($row->shipping_delay)
+				->setIn_stock($row->in_stock)
+				->setBacklog($row->backlog)
+				->setOrdered($row->ordered);
 				$entities[] = $entity;
 			}
 	
 			return $entities;
 		}
 	
-		public function getRounde ($id)
+		public function getRound ($id)
 		{
 			$row = $this->select(array(
 					'id' => (int) $id
