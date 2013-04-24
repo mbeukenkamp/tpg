@@ -11,6 +11,7 @@ namespace Game;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
+use Game\Model\RoundTable;
 
 class Module implements AutoloaderProviderInterface
 {
@@ -33,7 +34,18 @@ class Module implements AutoloaderProviderInterface
     {
         return include __DIR__ . '/config/module.config.php';
     }
-
+    public function getServiceConfig() {
+    	return array(
+    			'factories' => array(
+    					'Game\Model\RoundTable' => function($sm) {
+    						$dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+    						$table = new RoundTable($dbAdapter);
+    						return $table;
+    					},
+    			),
+    	);
+    }
+    
     public function onBootstrap($e)
     {
         // You may not need to do this if you're doing it elsewhere in your

@@ -8,7 +8,7 @@ class Round {
 	protected $id_role;
 	protected $id_round;
 	protected $id_product;
-	protected $id_recieving_delay;
+	protected $id_receiving_delay;
 	protected $id_shipping_delay;
 	protected $id_backlog;
 	protected $id_ordered;
@@ -54,10 +54,10 @@ class Round {
 	
 	/**
 	 *
-	 * @return the $id_recieving_delay
+	 * @return the $id_receiving_delay
 	 */
-	public function getId_recieving_delay() {
-		return $this->id_recieving_delay;
+	public function getId_receiving_delay() {
+		return $this->id_receiving_delay;
 	}
 	
 	/**
@@ -126,10 +126,10 @@ class Round {
 	
 	/**
 	 *
-	 * @param field_type $id_recieving_delay        	
+	 * @param field_type $id_receiving_delay        	
 	 */
-	public function setId_recieving_delay($id_recieving_delay) {
-		$this->id_recieving_delay = $id_recieving_delay;
+	public function setId_receiving_delay($id_receiving_delay) {
+		$this->id_receiving_delay = $id_receiving_delay;
 	}
 	
 	/**

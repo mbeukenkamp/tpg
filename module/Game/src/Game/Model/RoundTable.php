@@ -2,6 +2,7 @@
 
 namespace Game\Model;
  
+use Zend\Db\Adapter\Adapter;
 use Zend\Db\TableGateway\AbstractTableGateway;
 
 class RoundTable extends AbstractTableGateway
@@ -27,7 +28,7 @@ class RoundTable extends AbstractTableGateway
 				->setId_role($row->id_role)
 				->setId_round($row->id_round)
 				->setId_product($row->id_product)
-				->setRecieving_delay($row->recieving_delay)
+				->setReceiving_delay($row->receiving_delay)
 				->setShipping_delay($row->shipping_delay)
 				->setIn_stock($row->in_stock)
 				->setBacklog($row->backlog)
