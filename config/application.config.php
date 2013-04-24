@@ -5,6 +5,7 @@ return array (
 				'Application',
 				'Maintenance',
 				'Game',
+				'Advertentie',
 				'ZfcBase',
 				'ZfcUser'
 		),
