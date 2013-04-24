@@ -10,14 +10,27 @@
 namespace Game\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
-use Zend\View\Helper\ViewModel;
+// use Zend\View\Helper\ViewModel;
+use Zend\View\Model\ViewModel;
 
 class GameController extends AbstractActionController {
 	protected $_RoundTable;
 	public function indexAction() {
-// 		return new ViewModel ( array (
-// 				'round' => $this->getRoundTable ()->fetchAll () 
-// 		) );
+		return new ViewModel ( array (
+				// 'round' => $this->getRoundTable ()->fetchAll ()
+				'round' => array (
+						'id' => '1',
+						'id_game' => '1',
+						'id_role' => '1',
+						'id_round' => '1',
+						'id_product' => '1',
+						'receiving_delay' => '4',
+						'shipping_delay' => '4',
+						'in_stock' => '12',
+						'backlog' => '1',
+						'ordered' => '3' 
+				) 
+		) );
 	}
 	public function getRoundTable() {
 		if (! $this->_RoundTable) {
