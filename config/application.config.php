@@ -6,8 +6,8 @@ return array (
 				'Maintenance',
 				'Game',
 				'Advertentie',
-				'ZfcBase',
-				'ZfcUser'
+// 				'ZfcBase',
+// 				'ZfcUser'
 		),
 		
 		// These are various options for the listeners attached to the ModuleManager
