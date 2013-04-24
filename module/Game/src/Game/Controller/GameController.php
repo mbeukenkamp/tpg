@@ -17,8 +17,8 @@ class GameController extends AbstractActionController {
 	protected $_RoundTable;
 	public function indexAction() {
 		return new ViewModel ( array (
-				// 'round' => $this->getRoundTable ()->fetchAll ()
-				'round' => array (
+				'round' => $this->getRoundTable ()->fetchAll (),
+				'ronde' => array (
 						'id' => '1',
 						'id_game' => '1',
 						'id_role' => '1',
