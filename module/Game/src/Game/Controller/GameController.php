@@ -15,9 +15,9 @@ use Zend\View\Helper\ViewModel;
 class GameController extends AbstractActionController {
 	protected $_RoundTable;
 	public function indexAction() {
-		return new ViewModel ( array (
-				'round' => $this->getRoundTable ()->fetchAll () 
-		) );
+// 		return new ViewModel ( array (
+// 				'round' => $this->getRoundTable ()->fetchAll () 
+// 		) );
 	}
 	public function getRoundTable() {
 		if (! $this->_RoundTable) {
