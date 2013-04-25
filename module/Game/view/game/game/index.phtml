@@ -1,11 +1,11 @@
 <?php
-echo "Ronde-id: " . $ronde["id"] . "<br/>";
-echo "Ronde-receiving_delay: " . $ronde["receiving_delay"];
+
+echo "<p>Welcome at the x-th round of game y of the SCM simulationgame.</p>";
+// echo "<p>Round ".$round->getId_game().".</p>";
+echo "<p>Round 1.</p>";
+echo "<p>Welcome at the x-th round of game y of the SCM simulationgame.</p>";
+
 
 foreach ($round as $key => $roundx) {
-//     try {
-        echo $roundx->getId();
-//     } catch (Exception $e) {
-//         echo 'Caught exception: ', $e->getMessage(), "\n Round id niet gevonden\n";
-//     }
+        echo "<p>Game ".$roundx->getId_game()." Role: ".$roundx->getId_role()." Round: ".$roundx->getId_round()."</p>";
 }
