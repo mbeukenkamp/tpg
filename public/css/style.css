@@ -66,8 +66,8 @@ div.container a.brand {
 	heigth: 200px;
 	padding: 2px;	
 }
-.one_plan_logo {
-	background: url("../images/OnePlan_logo_AN_HR.jpg");
+.oneplan_logo {
+	background-image: "../img/oneplan_logo_an_hr.jpg";
 	width: 600px;
 	heigth: 200px;
 	border: 1px solid #0070C0;
