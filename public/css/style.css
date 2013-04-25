@@ -1,37 +1,63 @@
 body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	background: url("../images/body_bg_home.jpg") repeat-x;
+	background-position-x: left;
+	background-position-y: top;
+}
+
+div.nav-collapse img {
+	float: left;
+	margin-top: 10px;
+}
+
+div.nav-collapse .nav {
+	margin-left: 30px;
 }
 
 .zf-green {
-    color: #68b604;
+	color: #68b604;
 }
 
-.btn-success {
-  background-color: #57a900;
-  background-image: -moz-linear-gradient(top, #70d900, #57a900);
-  background-image: -ms-linear-gradient(top, #70d900, #57a900);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#70d900), to(#57a900));
-  background-image: -webkit-linear-gradient(top, #70d900, #57a900);
-  background-image: -o-linear-gradient(top, #70d900, #57a900);
-  background-image: linear-gradient(top, #70d900, #57a900);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70d900', endColorstr='#57a900', GradientType=0);
+.button a {
+	text-decoration: none;
 }
 
-.btn-success:hover,
-.btn-success:active,
-.btn-success.active,
-.btn-success.disabled,
-.btn-success[disabled] {
-  background-color: #57a900;
+.button {
+	text-align: center;
+	/* text-shadow: 0 1px 0 #FFFFFF;*/
+	background-color: #57a900;
+	background-image: -moz-linear-gradient(top, #CCCCCC, #00AA00);
+	/*	background: -moz-linear-gradient(center top , #CCCCCC, #00AA00) repeat scroll 0 0 transparent;*/
+	background-image: -ms-linear-gradient(top, #CCCCCC, #00AA00);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CCCCCC),
+		to(#00AA00) );
+	background-image: -webkit-linear-gradient(top, #CCCCCC, #00AA00);
+	background-image: -o-linear-gradient(top, #CCCCCC, #00AA00);
+	background-image: linear-gradient(top, #CCCCCC, #00AA00);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC',
+		endColorstr='#00AA00', GradientType=0 );
+	padding: 10px;
+	border-radius: 12px 12px 12px 12px;
+	border: 1px solid #AAAAAA;
+	font-size: x-large;
+	color: white;
 }
 
-.btn-success:active, .btn-success.active {
-  background-color: #57a900;
+.button:hover,.btn-success:active,.btn-success.active,.btn-success.disabled,.btn-success[disabled]
+	{
+	background-color: #57a900;
+	color: black;
+}
+
+.button:active,.btn-success.active {
+	background-color: #57a900;
+	color: black;
 }
 
 div.container a.brand {
-    background: url("../img/zf2-logo.png") no-repeat scroll 0 10px transparent;
-    margin-left: 0;
-    padding: 8px 20px 12px 40px;
+	background: url("../images/zf2-logo.png") no-repeat scroll 0 10px
+		transparent; */
+	margin-left: 0;
+	padding: 8px 20px 12px 40px;
 }

@@ -23,7 +23,7 @@ msgstr "Applicatie Fundering"
 
 #: ../view/layout/layout.phtml:36
 msgid "Home"
-msgstr "Home"
+msgstr "Huis"
 
 #: ../view/layout/layout.phtml:50
 msgid "All rights reserved."
