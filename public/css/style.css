@@ -16,7 +16,7 @@ div.nav-collapse .nav {
 }
 
 .zf-green {
-	color: #68b604;
+	color: #0070C0;
 }
 
 .button a {
@@ -26,17 +26,17 @@ div.nav-collapse .nav {
 .button {
 	text-align: center;
 	/* text-shadow: 0 1px 0 #FFFFFF;*/
-	background-color: #57a900;
-	background-image: -moz-linear-gradient(top, #CCCCCC, #00AA00);
-	/*	background: -moz-linear-gradient(center top , #CCCCCC, #00AA00) repeat scroll 0 0 transparent;*/
-	background-image: -ms-linear-gradient(top, #CCCCCC, #00AA00);
+	background-color: #0070C0;
+	background-image: -moz-linear-gradient(top, #CCCCCC, #0070C0);
+	/*	background: -moz-linear-gradient(center top , #CCCCCC, #0070C0) repeat scroll 0 0 transparent;*/
+	background-image: -ms-linear-gradient(top, #CCCCCC, #0070C0);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CCCCCC),
-		to(#00AA00) );
-	background-image: -webkit-linear-gradient(top, #CCCCCC, #00AA00);
-	background-image: -o-linear-gradient(top, #CCCCCC, #00AA00);
-	background-image: linear-gradient(top, #CCCCCC, #00AA00);
+		to(#0070C0) );
+	background-image: -webkit-linear-gradient(top, #CCCCCC, #0070C0);
+	background-image: -o-linear-gradient(top, #CCCCCC, #0070C0);
+	background-image: linear-gradient(top, #CCCCCC, #0070C0);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC',
-		endColorstr='#00AA00', GradientType=0 );
+		endColorstr='#0070C0', GradientType=0 );
 	padding: 10px;
 	border-radius: 12px 12px 12px 12px;
 	border: 1px solid #AAAAAA;
@@ -46,12 +46,12 @@ div.nav-collapse .nav {
 
 .button:hover,.btn-success:active,.btn-success.active,.btn-success.disabled,.btn-success[disabled]
 	{
-	background-color: #57a900;
-	color: black;
+	background-color: #0070C0;
+	color: orange;
 }
 
 .button:active,.btn-success.active {
-	background-color: #57a900;
+	background-color: #0070C0;
 	color: black;
 }
 
@@ -60,4 +60,21 @@ div.container a.brand {
 		transparent; */
 	margin-left: 0;
 	padding: 8px 20px 12px 40px;
+}
+.zend_form {
+	width: 300px;
+	heigth: 200px;
+	padding: 2px;	
+}
+.one_plan_logo {
+	background: url("../images/OnePlan_logo_AN_HR.jpg");
+	width: 600px;
+	heigth: 200px;
+	border: 1px solid #0070C0;
+	padding: 2px;
+}
+.wrapper {
+	align: center;
+	width: 600px;
+	clear: both;
 }
