@@ -1,4 +1,5 @@
 body {
+	font-family: Helvetica, Arial, sans-serif; 
 	padding-top: 60px;
 	padding-bottom: 40px;
 	background: url("../images/body_bg_home.jpg") repeat-x;
@@ -38,7 +39,7 @@ div.nav-collapse .nav {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC',
 		endColorstr='#0070C0', GradientType=0 );
 	padding: 10px;
-	border-radius: 12px 12px 12px 12px;
+    border-radius: 5px 5px 5px 5px;
 	border: 1px solid #AAAAAA;
 	font-size: medium;
 	color: white;
@@ -62,18 +63,16 @@ div.container a.brand {
 	padding: 8px 20px 12px 40px;
 }
 .zend_form {
-	width: 300px;
-	heigth: 200px;
-	border: 1px solid #AAAAAA;	
+	width: 600px;
+	heigth: 200px;	
+	float: left;
 }
 .oneplan_logo {
-	width: 950px;
+	width: 800px;
 	heigth: 250px;
-	border: 1px solid #AAAAAA;
+	float: left;
 }
 .wrapper {
-	border: 1px solid #AAAAAA;
 	width: 1024px;
-	margin-left: auto;
-	margin-right: 0%;
+	margin-left: 0%;
 }
