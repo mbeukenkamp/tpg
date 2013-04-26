@@ -38,7 +38,7 @@ div.nav-collapse .nav {
 	background-image: linear-gradient(top, #CCCCCC, #0070C0);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC',
 		endColorstr='#0070C0', GradientType=0 );
-	padding: 10px;
+	padding: 5px;
     border-radius: 5px 5px 5px 5px;
 	border: 1px solid #AAAAAA;
 	font-size: medium;
