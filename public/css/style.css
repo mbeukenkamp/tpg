@@ -48,7 +48,7 @@ div.nav-collapse .nav {
 .button:hover,.btn-success:active,.btn-success.active,.btn-success.disabled,.btn-success[disabled]
 	{
 	background-color: #0070C0;
-	color: orange;
+	color: black;
 }
 
 .button:active,.btn-success.active {
