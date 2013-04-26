@@ -40,7 +40,7 @@ div.nav-collapse .nav {
 	padding: 10px;
 	border-radius: 12px 12px 12px 12px;
 	border: 1px solid #AAAAAA;
-	font-size: x-large;
+	font-size: medium;
 	color: white;
 }
 
@@ -63,18 +63,14 @@ div.container a.brand {
 }
 .zend_form {
 	width: 300px;
-	heigth: 200px;
-	padding: 2px;	
+	heigth: 200px;	
 }
 .oneplan_logo {
-	background: url("../img/OnePlan_logo_AN_LR.jpg") no-repeat transparent;
-	width: 600px;
-	heigth: 200px;
-	border: 1px solid #0070C0;
-	padding: 2px;
+	width: 950px;
+	heigth: 250px;
 }
 .wrapper {
-	align: center;
-	width: 600px;
-	clear: both;
+	width: 1024px;
+	margin-left: auto;
+	margin-right: 20%;
 }
