@@ -63,13 +63,16 @@ div.container a.brand {
 }
 .zend_form {
 	width: 300px;
-	heigth: 200px;	
+	heigth: 200px;
+	border: 1px solid #AAAAAA;	
 }
 .oneplan_logo {
 	width: 950px;
 	heigth: 250px;
+	border: 1px solid #AAAAAA;
 }
 .wrapper {
+	border: 1px solid #AAAAAA;
 	width: 1024px;
 	margin-left: auto;
 	margin-right: 0%;
