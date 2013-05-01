@@ -1,10 +1,11 @@
 <?php
+
 echo "<p>Welcome at the x-th round of game y of the SCM simulationgame.</p>";
 // echo "<p>Round ".$round->getId_game().".</p>";
 echo "<p>Round 1.</p>";
 echo "<p>Welcome at the x-th round of game y of the SCM simulationgame.</p>";
 
+
 foreach ($round as $key => $roundx) {
-    echo "<p>Game " . $roundx->getId_game() . " Role: " . $roundx->getId_role() . " Round: " . $roundx->getId_round() . "</p>";
+        echo "<p>Game ".$roundx->getId_game()." Role: ".$roundx->getId_role()." Round: ".$roundx->getId_round()."</p>";
 }
-echo "yepitworks"; 

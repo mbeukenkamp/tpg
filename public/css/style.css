@@ -1,4 +1,5 @@
 body {
+	font-family: Helvetica, Arial, sans-serif; 
 	padding-top: 60px;
 	padding-bottom: 40px;
 	background: url("../images/body_bg_home.jpg") repeat-x;
@@ -16,7 +17,7 @@ div.nav-collapse .nav {
 }
 
 .zf-green {
-	color: #68b604;
+	color: #0070C0;
 }
 
 .button a {
@@ -26,32 +27,32 @@ div.nav-collapse .nav {
 .button {
 	text-align: center;
 	/* text-shadow: 0 1px 0 #FFFFFF;*/
-	background-color: #57a900;
-	background-image: -moz-linear-gradient(top, #CCCCCC, #00AA00);
-	/*	background: -moz-linear-gradient(center top , #CCCCCC, #00AA00) repeat scroll 0 0 transparent;*/
-	background-image: -ms-linear-gradient(top, #CCCCCC, #00AA00);
+	background-color: #0070C0;
+	background-image: -moz-linear-gradient(top, #CCCCCC, #0070C0);
+	/*	background: -moz-linear-gradient(center top , #CCCCCC, #0070C0) repeat scroll 0 0 transparent;*/
+	background-image: -ms-linear-gradient(top, #CCCCCC, #0070C0);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#CCCCCC),
-		to(#00AA00) );
-	background-image: -webkit-linear-gradient(top, #CCCCCC, #00AA00);
-	background-image: -o-linear-gradient(top, #CCCCCC, #00AA00);
-	background-image: linear-gradient(top, #CCCCCC, #00AA00);
+		to(#0070C0) );
+	background-image: -webkit-linear-gradient(top, #CCCCCC, #0070C0);
+	background-image: -o-linear-gradient(top, #CCCCCC, #0070C0);
+	background-image: linear-gradient(top, #CCCCCC, #0070C0);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC',
-		endColorstr='#00AA00', GradientType=0 );
-	padding: 10px;
-	border-radius: 12px 12px 12px 12px;
+		endColorstr='#0070C0', GradientType=0 );
+	padding: 5px;
+    border-radius: 5px 5px 5px 5px;
 	border: 1px solid #AAAAAA;
-	font-size: x-large;
+	font-size: medium;
 	color: white;
 }
 
 .button:hover,.btn-success:active,.btn-success.active,.btn-success.disabled,.btn-success[disabled]
 	{
-	background-color: #57a900;
+	background-color: #0070C0;
 	color: black;
 }
 
 .button:active,.btn-success.active {
-	background-color: #57a900;
+	background-color: #0070C0;
 	color: black;
 }
 
@@ -61,3 +62,18 @@ div.container a.brand {
 	margin-left: 0;
 	padding: 8px 20px 12px 40px;
 }
+.zend_form {
+	width: 600px;
+	heigth: 200px;	
+	float: left;
+}
+.oneplan_logo {
+	width: 800px;
+	heigth: 250px;
+	float: left;
+}
+.wrapper {
+	width: 1024px;
+	margin-left: 0%;
+}
+

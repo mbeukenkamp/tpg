@@ -19,7 +19,7 @@
                                       ->prependFile($this->basePath() . '/js/jquery.min.js') ?>
 
     </head>
-    <body>
+    <body> 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="lnavbar-inner">
                 <div class="container">
@@ -30,7 +30,7 @@
                     </a>
                     <!-- <a class="brand" href="<?php echo $this->url('home') ?>"></a> -->
                     <div class="nav-collapse collapse">
-                        <img src="http://assets.autotrack.nl/gfx/layout/autotrack_logo.gif" />
+                      <!--  <img src="http://assets.autotrack.nl/gfx/layout/autotrack_logo.gif" /> -->
                         <ul class="nav">
                             <li class="active"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Home') ?></a></li>
                             <li class="active"><a href="<?php echo $this->url('maintenance') ?>">Maintenance</a></li>
@@ -39,12 +39,11 @@
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
-        </div>
+        </div> 
         <div class="container">
             <?php echo $this->content; ?>
-            <hr>
             <footer>
-                <p>By Wegener - Autotrack. <?php echo $this->translate('All rights reserved.') ?></p>
+                <p><?php echo $this->translate('') ?></p>
             </footer>
         </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>
