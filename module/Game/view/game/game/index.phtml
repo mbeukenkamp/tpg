@@ -1,12 +1,147 @@
 <?php
-
 echo "<p>Welcome at the x-th round of game y of the SCM simulationgame.</p>";
-// echo "<p>Round ".$round->getId_game().".</p>";
-echo "<p>Round 1.</p>";
-echo "<p>Welcome at the x-th round of game y of the SCM simulationgame.</p>";
+?>
+<!-- The current situation -->
 
+<!-- The Factory -->
+<div id="role1">
+	Factory
+	<table id="role1">
+		<tr>
+			<td id="title_recdelay">Rec.delay</td>
+			<td id="title_instock">In stock</td>
+			<td id="title_ordered">Ordered</td>
+			<td id="title_todeliver">To deliver</td>
+			<td id="title_shipdelay">Ship.delay</td>
+		</tr>
 
+<?php
 foreach ($round as $key => $roundx) {
-        echo "<p>Game ".$roundx->getId_game()." Role: ".$roundx->getId_role()." Round: ".$roundx->getId_round()."</p>";
+    if ($roundx->getId_game() == 1 && $roundx->getId_role() == 1 && $roundx->getId_round() == 1) {
+        echo "<tr><td>" . $roundx->getReceiving_delay() . "</td>
+              <td>" . $roundx->getIn_Stock() . "</td>
+              <td>" . $roundx->getOrdered() . "</td>
+              <td>" . $roundx->getBacklog() . "</td>
+			  <td>" . $roundx->getShipping_delay() . "</td></tr>";
+    }
 }
-echo "Merged local branch Tim1 to remote Branchje Tim1s";
+?>
+	</table>
+</div>
+
+<!-- The Distibution Centre -->
+<div id="role2">
+	Distribution Centre
+	<table id="role2">
+		<tr>
+			<td id="title_recdelay">Rec.delay</td>
+			<td id="title_instock">In stock</td>
+			<td id="title_ordered">Ordered</td>
+			<td id="title_todeliver">To deliver</td>
+			<td id="title_shipdelay">Ship.delay</td>
+		</tr>
+
+<?php
+foreach ($round as $key => $roundx) {
+    if ($roundx->getId_game() == 1 && $roundx->getId_role() == 1 && $roundx->getId_round() == 1) {
+        echo "<tr><td>" . $roundx->getReceiving_delay() . "</td>
+              <td>" . $roundx->getIn_Stock() . "</td>
+              <td>" . $roundx->getOrdered() . "</td>
+              <td>" . $roundx->getBacklog() . "</td>
+			  <td>" . $roundx->getShipping_delay() . "</td></tr>";
+    }
+}
+?>
+	</table>
+</div>
+
+<!-- The Customer Distibution Centre -->
+<div id="role3">
+	Distribution Centre
+	<table id="role3">
+		<tr>
+			<td id="title_shipdelay">Ship.delay</td>
+			<td id="title_todeliver">To deliver</td>
+			<td id="title_ordered">Ordered</td>
+			<td id="title_instock">In stock</td>
+			<td id="title_recdelay">Rec.delay</td>
+		</tr>
+
+<?php
+foreach ($round as $key => $roundx) {
+    if ($roundx->getId_game() == 1 && $roundx->getId_role() == 1 && $roundx->getId_round() == 1) {
+        echo "<tr><td>" . $roundx->getShipping_delay() . "</td>
+              <td>" . $roundx->getBacklog() . "</td>
+              <td>" . $roundx->getOrdered() . "</td>
+              <td>" . $roundx->getIn_Stock() . "</td>
+			  <td>" . $roundx->getReceiving_delay() . "</td></tr>";
+    }
+}
+?>
+	</table>
+</div>
+
+<!-- The Customer -->
+<div id="role4">
+	Customer
+	<table id="role4">
+		<tr>
+			<td id="title_shipdelay">Ship.delay</td>
+			<td id="title_todeliver">To deliver</td>
+			<td id="title_ordered">Ordered</td>
+			<td id="title_instock">In stock</td>
+			<td id="title_recdelay">Rec.delay</td>
+		</tr>
+
+<?php
+foreach ($round as $key => $roundx) {
+    if ($roundx->getId_game() == 1 && $roundx->getId_role() == 1 && $roundx->getId_round() == 1) {
+        echo "<tr><td>" . $roundx->getShipping_delay() . "</td>
+              <td>" . $roundx->getBacklog() . "</td>
+              <td>" . $roundx->getOrdered() . "</td>
+              <td>" . $roundx->getIn_Stock() . "</td>
+			  <td>" . $roundx->getReceiving_delay() . "</td></tr>";
+    }
+}
+?>
+	</table>
+</div>
+
+<!-- The order line -->
+<hr>
+<a id="btn_delivergoods" class="button">Deliver Goods</a>
+<label for="product1">A</label>
+<input id="product1" type="text" />
+<label for="product2">B</label>
+<input id="product2" type="text" />
+<a id="btn_placeorder" class="button">Place order</a>
+<hr>
+
+<!-- The history table -->
+<div id="history">
+	<table id="historytable">
+		<tr>
+			<td id="title_product">A/B</td>
+			<td id="title_round">Round</td>
+			<td id="title_ordered">Ordered</td>
+			<td id="title_recdelay">Rec.delay</td>
+			<td id="title_shipdelay">Ship.delay</td>
+			<td id="title_instock">In stock</td>
+			<td id="title_backlog">Backlog</td>
+		</tr>
+
+<?php
+foreach ($round as $key => $roundx) {
+    echo "<tr><td>" . $roundx->getId_product() . "</td>
+              <td>" . $roundx->getId_round() . "</td>
+              <td>" . $roundx->getOrdered() . "</td>
+              <td>" . $roundx->getReceiving_delay() . "</td>
+              <td>" . $roundx->getShipping_delay() . "</td>
+              <td>" . $roundx->getIn_Stock() . "</td>
+              <td>" . $roundx->getBacklog() . "</td></tr>";
+}
+?>
+	</table>
+</div>
+
+<?php
